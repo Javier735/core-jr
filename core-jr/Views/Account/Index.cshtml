@@ -1,0 +1,149 @@
+﻿
+	<!-- PAGE-HEADER -->
+		<div class="page-header">
+			<div>
+				<h1 class="page-title">Administración</h1>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="javascript:void(0);">Pagina</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Usuarios y roles</li>
+				</ol>
+			</div>		
+		</div>
+	<!-- PAGE-HEADER END -->
+
+<div class="card">
+	<div class="card-header">
+		<h3 class="card-title">Administración</h3>
+	</div>
+	<div class="card-body">
+<div class="card-pay">
+			<ul class="tabs-menu nav">
+				<li class="">
+					<a href="" onclick="callUserTable()" class="active" data-bs-toggle="tab">
+						 <span id="tUsers">
+						     <i class="fa fa-users"></i>
+						    Usuarios
+					     </span>
+						<div class="spinner-grow text-light" id="animationUser" style="display:none;" role="status">
+							<span class="visually-hidden">Loading...</span>
+						</div>
+					</a>
+				</li>
+					<li class="">
+					<a href="" onclick="callRoleTable()" class="" data-bs-toggle="tab">
+						 <span id="tRol">
+						     <i class="fa fa-check"></i>
+						    Roles
+					     </span>
+						<div class="spinner-grow text-light" id="animationRol" style="display:none;" role="status">
+							<span class="visually-hidden">Loading...</span>
+						</div>
+					</a>
+				</li>	
+			</ul>
+			<div class="tab-content" id="c-administration">
+				
+			</div>
+		</div>
+	</div>
+</div>    
+
+
+<!-- modal create user -->
+<div class="modal fade"  id="modalCreateUser">
+    <div class="modal-dialog modal-dialog-centered text-center" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title">Agregar usuario</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal" ><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+				<div id="createUser"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-light" data-bs-dismiss="modal" >Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal edit rol -->
+<div class="modal fade"  id="modalEditRol">
+    <div class="modal-dialog modal-dialog-centered text-center" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title">Rol</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal" ><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+				<div id="editRol"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-light" data-bs-dismiss="modal" >Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            callUserTable();
+        });
+    </script>}
+
+<script>	
+	function callUserTable()
+	{
+		var div = document.getElementById('animationUser');
+		var span = document.getElementById('tUsers');
+		span.style.display = 'none';
+		div.style.display = '';
+
+        $.ajax({
+			type: "get",
+			datatype: 'json',
+			cache: false,
+        
+			url: '@Url.Content("~/User/Index")',
+			success: function (result) {
+				$('#c-administration').html(result);
+				span.style.display = '';
+				div.style.display = 'none';
+			},
+			error: function (result) {
+				alert('Ocurrio un error ' + result.error.toString);
+				var resultado = result;
+					span.style.display = '';
+					div.style.display = 'none';
+			}
+	    }); 
+	}
+
+	function callRoleTable(){
+      var div = document.getElementById('animationRol');
+		var span = document.getElementById('tRol');
+		span.style.display = 'none';
+		div.style.display = '';
+
+        $.ajax({
+			type: "get",
+			datatype: 'json',
+			cache: false,
+        
+			url: '@Url.Content("~/Rol/Index")',
+			success: function (result) {
+				$('#c-administration').html(result);
+				span.style.display = '';
+				div.style.display = 'none';
+			},
+			error: function (result) {
+				alert('Ocurrio un error ' + result.error.toString);
+				var resultado = result;
+					span.style.display = '';
+					div.style.display = 'none';
+			}
+	    }); 
+	}	
+</script>

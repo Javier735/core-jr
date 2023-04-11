@@ -1,0 +1,87 @@
+﻿@model IEnumerable<ListCheckBox>
+
+   <p>Nombre: <strong>@ViewBag.Name</strong></p>
+    <p>Usuario: <strong>@ViewBag.UserName</strong></p>
+
+<form id="formAddUserRol">
+    <input type="hidden" name="UserId" value="@ViewBag.Id" />
+   <div class="example" style="text-align:left;">
+       <ul class="list-group">
+            @foreach (var item in Model)
+            {
+                <li>
+                    <div class="form-check form-check-success">
+                        <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="@item.Value" name="values" @item.Property>@item.Name <i class="input-helper"></i>
+                        </label>
+                    </div>
+                </li>              
+            }
+
+		</ul>
+	</div>
+    <br />
+
+  <button type="button" class="btn btn-primary-light"  style="width:100%" onclick="submiFormAddUserRol()">Guardar</button>
+
+</form>
+<br />
+<div id="alertMessage">
+ 
+</div>
+<script>
+    function submiFormAddUserRol() {    
+        
+        const divMessageResul = document.getElementById("alertMessage");
+
+        var data = $("#formAddUserRol").serialize();
+        console.log(data);
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Content("~/User/AddUserRol")',
+            contentType: 'application/x-www-form-urlencoded; charset=UTF-8', // when we use .serialize() this generates the data in query string format. this needs the default contentType (default content type is: contentType: 'application/x-www-form-urlencoded; charset=UTF-8') so it is optional, you can remove it
+            data: data,
+            success: function (data) {   
+                if (data.result == 1) {
+                    //ok
+                    divMessageResul.innerHTML = `
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <span class="alert-inner--icon"><i class="fe fe-thumbs-up"></i></span>
+                        <span class="alert-inner--text"><strong>Listo!</strong> ${data.msg}!</span>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                    </div>	
+                    `;
+                }
+                if (data.result==2) {
+                    //error
+                    divMessageResul.innerHTML = `
+                        <div class="alert alert-danger alert-dismissible fade show mb-0" role="alert">
+                            <span class="alert-inner--icon"><i class="fe fe-slash"></i></span>
+                            <span class="alert-inner--text"><strong>Error!</strong>  ${data.msg}!</span>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                    `;
+                }
+                if (data.result==3) {
+                    //error
+                    divMessageResul.innerHTML = `
+                      	<div class="alert alert-info alert-dismissible fade show" role="alert">
+			                <span class="alert-inner--icon"><i class="fe fe-info"></i></span>
+			                <span class="alert-inner--text"><strong>Info!</strong>  ${data.msg}!</span>
+			                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+				                <span aria-hidden="true">×</span>
+			                </button>
+		                </div>
+                    `;
+                }
+                //callUserTable();                               
+            },
+            error: function () {               
+                console.log('Failed ');            }
+        });
+    }
+</script>

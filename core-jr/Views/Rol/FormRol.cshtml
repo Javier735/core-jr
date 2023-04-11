@@ -1,0 +1,130 @@
+﻿@model AppRol
+
+<form id="formAddRol">
+	<input type="hidden" name="Id" value="@Model.Id" />
+	<div class="input-group mb-3">
+		<span class="input-group-text" ><i class="fa fa-check" aria-hidden="true"></i></span>
+		<input class="form-control" type="text" name="Name" value="@Model.Name" placeholder="Nombre del rol" required>	
+	</div>
+	<div class="input-group mb-3">
+		<span class="input-group-text" ><i class="fa fa-file-text-o" aria-hidden="true"></i></span>
+			<input class="form-control"  type="text" name="Description" value="@Model.Description" placeholder="Descripción del rol"/>	
+	</div>
+
+		<div class="container-login100-form-btn">			
+		<button class="login100-form-btn btn-primary-light" type="button" onclick="submitRol()">
+			<span id="btnRegisterText">Guardar</span>			
+		</button>
+	</div>	
+</form>
+<br />
+<div id="alertMessage"> 
+</div>
+
+<script>
+	function submitRol() {
+		const divMessageResul = document.getElementById("alertMessage");
+        var data = $("#formAddRol").serialize();
+      
+        var textMessage=validateFormFields();       
+
+        if (textMessage.length>0) {
+            divMessageResul.innerHTML = `
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+			    <span class="alert-inner--icon"><i class="fe fe-info"></i></span>
+			    <span class="alert-inner--text"><strong>Info!</strong><ul>${textMessage}</ul></span>
+			    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">×</span>
+			    </button>
+		    </div>
+            `;
+        }
+
+        else{
+            $.ajax({
+            type: 'POST',
+            url: '@Url.Content("~/Rol/CreateEditRol")',
+            contentType: 'application/x-www-form-urlencoded; charset=UTF-8', // when we use .serialize() this generates the data in query string format. this needs the default contentType (default content type is: contentType: 'application/x-www-form-urlencoded; charset=UTF-8') so it is optional, you can remove it
+            data: data,
+            success: function (data) {   
+					if(data.result==1){
+						//success
+						    divMessageResul.innerHTML = `
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <span class="alert-inner--icon"><i class="fe fe-thumbs-up"></i></span>
+                        <span class="alert-inner--text"><strong>Listo!</strong> ${data.msg}!</span>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                    </div>	
+                    `;   				
+					  callRoleTable();
+				
+					}
+					if(data.result==2){
+						//info
+						   divMessageResul.innerHTML = `
+                      	<div class="alert alert-info alert-dismissible fade show" role="alert">
+			                <span class="alert-inner--icon"><i class="fe fe-info"></i></span>
+			                <span class="alert-inner--text"><strong>Info!</strong>  ${data.msg}!</span>
+			                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+				                <span aria-hidden="true">×</span>
+			                </button>
+		                </div>
+                    `;
+					}
+					if(data.result==3){
+						//warning
+						    divMessageResul.innerHTML = `                     
+						   <div class="alert alert-danger alert-dismissible fade show mb-0" role="alert">
+                            <span class="alert-inner--icon"><i class="fe fe-slash"></i></span>
+                            <span class="alert-inner--text"><strong>Error!</strong>  ${data.msg}!</span>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                    `;
+					}			
+				},
+				error: function () {               
+					console.log('Failed ');            
+				}
+			});
+        }
+
+    }
+
+function validateFormFields() {
+
+    let form = $('#formAddRol')[0];
+    let formRol = new FormData(form);
+
+    const name = formRol.get("Name");
+    const description = formRol.get("Description");
+
+    let errors = [];
+    let objectError = {};
+     var textMessage = "";
+
+    if (name == null || name.length == 0 || name.trim()=="" ) {
+        objectError = {
+            Label:"Nombre: ",
+            Description: "El campo no puede quedar vacio"
+        };
+        errors.push(objectError);
+    }
+    if (description == null || description.length == 0 || description.trim()=="") {
+        objectError = {
+            Label:"Descripción: ",
+            Description: "El campo no puede quedar vacio"
+        };
+        errors.push(objectError);
+    }
+
+     for (var i = 0; i < errors.length; i++) {
+            textMessage += '<li>'+errors[i].Label + " " +errors[i].Description+'</li>';
+        }
+
+    return textMessage;
+}
+</script>

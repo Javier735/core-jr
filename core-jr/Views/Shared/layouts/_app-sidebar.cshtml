@@ -1,0 +1,269 @@
+﻿
+                <!--APP-SIDEBAR-->
+                <div class="sticky">
+                    <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+                    <aside class="app-sidebar">
+                        <div class="side-header">
+                            <a class="header-brand1" asp-controller="Home" asp-action="Index" >
+                                <img src="~/assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+                                <img src="~/assets/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
+                                <img src="~/assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
+                                <img src="~/assets/images/brand/logo-3.png" class="header-brand-img light-logo1" alt="logo">
+                            </a>
+                            <!-- LOGO -->
+                        </div>
+                        <div class="main-sidemenu">
+                            <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg"
+                                    fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
+                                </svg></div>
+                            <ul class="side-menu">
+                                @*<li class="sub-category">
+                                    <h3>Main</h3>
+                                </li>
+                                <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" asp-controller="Home" asp-action="Index"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
+                                </li>*@
+                                <li class="sub-category">
+                                    <h3>Configuración</h3>
+                                </li>
+                                <li>
+                                    <a class="side-menu__item" asp-controller="Config" asp-action="Index"><i class="side-menu__icon fe fe-settings"></i><span class="side-menu__label">Configuración</span></a>
+                                </li>
+                                <li class="sub-category">
+                                    <h3>Administración</h3>
+                                </li>
+                                <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Administración</span><i class="angle fa fa-angle-right"></i></a>
+                                    <ul class="slide-menu">
+                                        <li class="side-menu-label1"><a href="javascript:void(0)">Administración</a></li>
+                                        <li><a asp-controller="Account" asp-action="Index" class="slide-item"> Usuarios y roles</a></li>
+                                       @* <li><a asp-controller="Calendar" asp-action="Index" class="slide-item"> Default calendar</a></li>
+                                        <li><a asp-controller="Calendar2" asp-action="Index" class="slide-item"> Full calendar</a></li>
+                                        <li><a asp-controller="Chat" asp-action="Index" class="slide-item"> Default Chat</a></li>
+                                        <li><a asp-controller="Notify" asp-action="Index" class="slide-item"> Notifications</a></li>
+                                        <li><a asp-controller="Sweetalert" asp-action="Index" class="slide-item"> Sweet alerts</a></li>
+                                        <li><a asp-controller="Rangeslider" asp-action="Index" class="slide-item"> Range slider</a></li>
+                                        <li><a asp-controller="Scroll" asp-action="Index" class="slide-item"> Content Scroll bar</a></li>
+                                        <li><a asp-controller="Loaders" asp-action="Index" class="slide-item"> Loaders</a></li>
+                                        <li><a asp-controller="Counters" asp-action="Index" class="slide-item"> Counters</a></li>
+                                        <li><a asp-controller="Rating" asp-action="Index" class="slide-item"> Rating</a></li>
+                                        <li><a asp-controller="Timeline" asp-action="Index" class="slide-item"> Timeline</a></li>
+                                        <li><a asp-controller="Treeview" asp-action="Index" class="slide-item"> Treeview</a></li>*@
+                                    </ul>
+                                </li>
+                               @* <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-package"></i><span class="side-menu__label">Elements</span><i class="angle fa fa-angle-right"></i></a>
+                                    <ul class="slide-menu">
+                                        <li class="side-menu-label1"><a href="javascript:void(0)">Elements</a></li>
+                                        <li><a asp-controller="Alerts" asp-action="Index" class="slide-item"> Alerts</a></li>
+                                        <li><a asp-controller="Buttons" asp-action="Index" class="slide-item"> Buttons</a></li>
+                                        <li><a asp-controller="Colors" asp-action="Index" class="slide-item"> Colors</a></li>
+                                        <li><a asp-controller="Avatarsquare" asp-action="Index" class="slide-item"> Avatar-Square</a></li>
+                                        <li><a asp-controller="AvatarRound" asp-action="Index" class="slide-item"> Avatar-Rounded</a></li>
+                                        <li><a asp-controller="AvatarRadius" asp-action="Index" class="slide-item"> Avatar-Radius</a></li>
+                                        <li><a asp-controller="Dropdown" asp-action="Index" class="slide-item"> Drop downs</a></li>
+                                        <li><a asp-controller="List" asp-action="Index" class="slide-item"> List</a></li>
+                                        <li><a asp-controller="Tags" asp-action="Index" class="slide-item"> Tags</a></li>
+                                        <li><a asp-controller="Pagination" asp-action="Index" class="slide-item"> Pagination</a></li>
+                                        <li><a asp-controller="Navigation" asp-action="Index" class="slide-item"> Navigation</a></li>
+                                        <li><a asp-controller="Typography" asp-action="Index" class="slide-item"> Typography</a></li>
+                                        <li><a asp-controller="Breadcrumbs" asp-action="Index" class="slide-item"> Breadcrumbs</a></li>
+                                        <li><a asp-controller="Badge" asp-action="Index" class="slide-item"> Badges</a></li>
+                                        <li><a asp-controller="Panels" asp-action="Index" class="slide-item"> Panels</a></li>
+                                        <li><a asp-controller="Thumbnails" asp-action="Index" class="slide-item"> Thumbnails</a></li>
+                                    </ul>
+                                </li>*@
+                               @* <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-file"></i><span class="side-menu__label">Advanced Elements</span><i class="angle fa fa-angle-right"></i></a>
+                                    <ul class="slide-menu">
+                                        <li class="side-menu-label1"><a href="javascript:void(0)">Advanced Elements</a></li>
+                                        <li><a asp-controller="Mediaobject" asp-action="Index" class="slide-item"> Media Object</a></li>
+                                        <li><a asp-controller="Accordion" asp-action="Index" class="slide-item"> Accordions</a></li>
+                                        <li><a asp-controller="Tabs" asp-action="Index" class="slide-item"> Tabs</a></li>
+                                        <li><a asp-controller="Chart" asp-action="Index" class="slide-item"> Charts</a></li>
+                                        <li><a asp-controller="Modal" asp-action="Index" class="slide-item"> Modal</a></li>
+                                        <li><a asp-controller="Tooltipandpopover" asp-action="Index" class="slide-item"> Tooltip and popover</a></li>
+                                        <li><a asp-controller="Progress" asp-action="Index" class="slide-item"> Progress</a></li>
+                                        <li><a asp-controller="Carousel" asp-action="Index" class="slide-item"> Carousels</a></li>
+                                        <li><a asp-controller="Headers" asp-action="Index" class="slide-item"> Headers</a></li>
+                                        <li><a asp-controller="Footers" asp-action="Index" class="slide-item"> Footers</a></li>
+                                        <li><a asp-controller="UsersList" asp-action="Index" class="slide-item"> User List</a></li>
+                                        <li><a asp-controller="Search" asp-action="Index" class="slide-item">Search</a></li>
+                                        <li><a asp-controller="CryptoCurrencies" asp-action="Index" class="slide-item"> Crypto-currencies</a></li>
+                                    </ul>
+                                </li>*@
+                               @* <li class="sub-category">
+                                    <h3>Charts & Tables</h3>
+                                </li>
+                                <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-pie-chart"></i><span class="side-menu__label">Charts</span><i class="angle fa fa-angle-right"></i></a>
+                                    <ul class="slide-menu">
+                                        <li class="side-menu-label1"><a href="javascript:void(0)">Charts</a></li>
+                                        <li><a asp-controller="ChartChartist" asp-action="Index" class="slide-item">Chart Js</a></li>
+                                        <li><a asp-controller="ChartFlot" asp-action="Index" class="slide-item"> Flot Charts</a></li>
+                                        <li><a asp-controller="ChartEchart" asp-action="Index" class="slide-item"> ECharts</a></li>
+                                        <li><a asp-controller="ChartMorris" asp-action="Index" class="slide-item"> Morris Charts</a></li>
+                                        <li><a asp-controller="ChartNvd3" asp-action="Index" class="slide-item"> Nvd3 Charts</a></li>
+                                        <li><a asp-controller="Charts" asp-action="Index" class="slide-item"> C3 Bar Charts</a></li>
+                                        <li><a asp-controller="ChartLine" asp-action="Index" class="slide-item"> C3 Line Charts</a></li>
+                                        <li><a asp-controller="ChartDonut" asp-action="Index" class="slide-item"> C3 Donut Charts</a></li>
+                                        <li><a asp-controller="ChartPie" asp-action="Index" class="slide-item"> C3 Pie charts</a></li>
+                                    </ul>
+                                </li>*@
+                               @* <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-clipboard"></i><span class="side-menu__label">Tables</span><span class="badge bg-secondary side-badge">2</span><i class="angle fa fa-angle-right hor-rightangle"></i></a>
+                                    <ul class="slide-menu">
+                                        <li class="side-menu-label1"><a href="javascript:void(0)">Tables</a></li>
+                                        <li><a asp-controller="Tables" asp-action="Index" class="slide-item">Default table</a></li>
+                                        <li><a asp-controller="Datatable" asp-action="Index" class="slide-item"> Data Tables</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-category">
+                                    <h3>Pages</h3>
+                                </li>*@
+                               @* <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-layers"></i><span class="side-menu__label">Pages</span><i class="angle fa fa-angle-right"></i></a>
+                                    <ul class="slide-menu">
+                                        <li class="side-menu-label1"><a href="javascript:void(0)">Pages</a></li>
+                                        <li><a asp-controller="Profile" asp-action="Index" class="slide-item"> Profile</a></li>
+                                        <li><a asp-controller="Editprofile" asp-action="Index" class="slide-item"> Edit Profile</a></li>
+                                        <li><a asp-controller="Email" asp-action="Index" class="slide-item"> Mail-Inbox</a></li>
+                                        <li><a asp-controller="Emailservices" asp-action="Index" class="slide-item"> Mail-Compose</a></li>
+                                        <li><a asp-controller="Gallery" asp-action="Index" class="slide-item"> Gallery</a></li>
+                                        <li><a asp-controller="About" asp-action="Index" class="slide-item"> About Company</a></li>
+                                        <li><a asp-controller="Services" asp-action="Index" class="slide-item"> Services</a></li>
+                                        <li><a asp-controller="Faq" asp-action="Index" class="slide-item"> FAQS</a></li>
+                                        <li><a asp-controller="Terms" asp-action="Index" class="slide-item"> Terms</a></li>
+                                        <li><a asp-controller="Invoice" asp-action="Index" class="slide-item"> Invoice</a></li>
+                                        <li><a asp-controller="Pricing" asp-action="Index" class="slide-item"> Pricing Tables</a></li>
+                                        <li><a asp-controller="Empty" asp-action="Index" class="slide-item"> Empty Page</a></li>
+                                        <li><a asp-controller="ErrorPages" asp-action="construction" class="slide-item"> Under Construction</a></li>
+                                    	<li><a asp-controller="Switcher" asp-action="Index" class="slide-item"> Theme Style</a></li>
+                                        <li class="sub-slide">
+                                            <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span class="sub-side-menu__label">Blog</span><i class="sub-angle fa fa-angle-right"></i></a>
+                                            <ul class="sub-slide-menu">
+                                                <li><a asp-controller="Blog" asp-action="Index" class="sub-slide-item">Blog</a></li>
+                                                <li><a asp-controller="BlogDetails" asp-action="Index" class="sub-slide-item">Blog Details</a></li>
+                                                <li><a asp-controller="BlogPost" asp-action="Index" class="sub-slide-item">Blog Post</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-slide">
+                                            <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span class="sub-side-menu__label">Maps</span><i class="sub-angle fa fa-angle-right"></i></a>
+                                            <ul class="sub-slide-menu">
+                                                <li><a asp-controller="Maps1" asp-action="Index" class="sub-slide-item">Leaflet Maps</a></li>
+                                                <li><a asp-controller="Maps2" asp-action="Index" class="sub-slide-item">Mapel Maps</a></li>
+                                                <li><a asp-controller="Maps" asp-action="Index" class="sub-slide-item">Vector Maps</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-slide">
+                                            <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span class="sub-side-menu__label">E-Commerce</span><i class="sub-angle fa fa-angle-right"></i></a>
+                                            <ul class="sub-slide-menu">
+                                                <li><a asp-controller="Shop" asp-action="Index" class="sub-slide-item">Shop</a></li>
+                                                <li><a asp-controller="ShopDescription" asp-action="Index" class="sub-slide-item">Shopping Details</a></li>
+                                                <li><a asp-controller="Cart" asp-action="Index" class="sub-slide-item">Shopping Cart</a></li>
+                                                <li><a asp-controller="Wishlist" asp-action="Index" class="sub-slide-item">Wishlist</a></li>
+                                                <li><a asp-controller="Checkout" asp-action="Index" class="sub-slide-item">Checkout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-slide">
+                                            <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span class="sub-side-menu__label">File Manager</span><i class="sub-angle fa fa-angle-right"></i></a>
+                                            <ul class="sub-slide-menu">
+                                                <li><a asp-controller="FileManager" asp-action="Index" class="sub-slide-item">File Manager</a></li>
+                                                <li><a asp-controller="FilemanagerList" asp-action="Index" class="sub-slide-item">File Manager List</a></li>
+                                                <li><a asp-controller="FilemanagerDetails" asp-action="Index" class="sub-slide-item">File Details</a></li>
+                                                <li><a asp-controller="FileAttachments" asp-action="Index" class="sub-slide-item">File Attachments</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>*@
+                               @* <li class="sub-category">
+                                    <h3>Custom & Error Pages</h3>
+                                </li>
+                                <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-settings"></i><span class="side-menu__label">Custom Pages</span><i class="angle fa fa-angle-right"></i></a>
+                                    <ul class="slide-menu">
+                                        <li class="side-menu-label1"><a href="javascript:void(0)">Custom Pages</a></li>
+                                        <li><a asp-controller="ErrorPages" asp-action="login" class="slide-item"> Login</a></li>
+                                        <li><a asp-controller="ErrorPages" asp-action="register" class="slide-item"> Register</a></li>
+                                        <li><a asp-controller="ErrorPages" asp-action="forgotpassword" class="slide-item"> Forgot Password</a></li>
+                                        <li><a asp-controller="ErrorPages" asp-action="lockscreen" class="slide-item"> Lock screen</a></li>
+                                        <li class="sub-slide">
+                                            <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span class="sub-side-menu__label">Error Pages</span><i class="sub-angle fa fa-angle-right"></i></a>
+                                            <ul class="sub-slide-menu">
+                                                <li><a class="sub-slide-item" asp-controller="ErrorPages" asp-action="error400">400</a></li>
+                                                <li><a class="sub-slide-item" asp-controller="ErrorPages" asp-action="error401">401</a></li>
+                                                <li><a class="sub-slide-item" asp-controller="ErrorPages" asp-action="error403">403</a></li>
+                                                <li><a class="sub-slide-item" asp-controller="ErrorPages" asp-action="error404">404</a></li>
+                                                <li><a class="sub-slide-item" asp-controller="ErrorPages" asp-action="error500">500</a></li>
+                                                <li><a class="sub-slide-item" asp-controller="ErrorPages" asp-action="error503">503</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>*@
+                                @*<li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);">
+                                        <i class="side-menu__icon fe fe-sliders"></i>
+                                        <span class="side-menu__label">Submenus</span><i class="angle fa fa-angle-right"></i></a>
+                                    <ul class="slide-menu">
+                                        <li class="side-menu-label1"><a href="javascript:void(0)">Submenus</a></li>
+                                        <li><a href="javascript:void(0);" class="slide-item">Level-1</a></li>
+                                        <li class="sub-slide">
+                                            <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span class="sub-side-menu__label">Level-2</span><i class="sub-angle fa fa-angle-right"></i></a>
+                                            <ul class="sub-slide-menu">
+                                                <li><a class="sub-slide-item" href="javascript:void(0);">Level-2.1</a></li>
+                                                <li><a class="sub-slide-item" href="javascript:void(0);">Level-2.2</a></li>
+                                                <li class="sub-slide2">
+                                                    <a class="sub-side-menu__item2" href="javascript:void(0);" data-bs-toggle="sub-slide2"><span class="sub-side-menu__label2">Level-2.3</span><i class="sub-angle2 fa fa-angle-right"></i></a>
+                                                    <ul class="sub-slide-menu2">
+                                                        <li><a href="javascript:void(0);" class="sub-slide-item2">Level-2.3.1</a></li>
+                                                        <li><a href="javascript:void(0);" class="sub-slide-item2">Level-2.3.2</a></li>
+                                                        <li><a href="javascript:void(0);" class="sub-slide-item2">Level-2.3.3</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a class="sub-slide-item" href="javascript:void(0);">Level-2.4</a></li>
+                                                <li><a class="sub-slide-item" href="javascript:void(0);">Level-2.5</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>*@
+                                @*<li class="sub-category">
+                                    <h3>Forms & Icons</h3>
+                                </li>
+                                <li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-file-text"></i><span class="side-menu__label">Forms</span><span class="badge bg-success side-badge">5</span><i class="angle fa fa-angle-right hor-rightangle"></i></a>
+                                    <ul class="slide-menu">
+                                        <li class="side-menu-label1"><a href="javascript:void(0)">Forms</a></li>
+                                        <li><a asp-controller="FormElements" asp-action="Index" class="slide-item"> Form Elements</a></li>
+                                        <li><a asp-controller="FormAdvanced" asp-action="Index" class="slide-item"> Form Advanced</a></li>
+                                        <li><a asp-controller="Wysiwyag" asp-action="Index" class="slide-item"> Form Editor</a></li>
+                                        <li><a asp-controller="FormWizard" asp-action="Index" class="slide-item"> Form Wizard</a></li>
+                                        <li><a asp-controller="FormValidation" asp-action="Index" class="slide-item"> Form Validation</a></li>
+                                    </ul>
+                                </li>*@
+                                @*<li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-command"></i><span class="side-menu__label">Icons</span><i class="angle fa fa-angle-right"></i></a>
+                                    <ul class="slide-menu">
+                                        <li class="side-menu-label1"><a href="javascript:void(0)">Icons</a></li>
+                                        <li><a asp-controller="Icons" asp-action="Index" class="slide-item"> Font Awesome</a></li>
+                                        <li><a asp-controller="Icons2" asp-action="Index" class="slide-item"> Material Design Icons</a></li>
+                                        <li><a asp-controller="Icons3" asp-action="Index" class="slide-item"> Simple Line Icons</a></li>
+                                        <li><a asp-controller="Icons4" asp-action="Index" class="slide-item"> Feather Icons</a></li>
+                                        <li><a asp-controller="Icons5" asp-action="Index" class="slide-item"> Ionic Icons</a></li>
+                                        <li><a asp-controller="Icons6" asp-action="Index" class="slide-item"> Flag Icons</a></li>
+                                        <li><a asp-controller="Icons7" asp-action="Index" class="slide-item"> pe7 Icons</a></li>
+                                        <li><a asp-controller="Icons8" asp-action="Index" class="slide-item"> Themify Icons</a></li>
+                                        <li><a asp-controller="Icons9" asp-action="Index" class="slide-item">Typicons Icons</a></li>
+                                        <li><a asp-controller="Icons10" asp-action="Index" class="slide-item">Weather Icons</a></li>
+                                        <li><a asp-controller="Icons11" asp-action="Index" class="slide-item">Bootstrap Icons</a></li>
+                                    </ul>
+                                </li>*@
+                            </ul>
+                            <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+                                    width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
+                                </svg></div>
+                        </div>
+                    </aside>
+                </div>
+                <!--/APP-SIDEBAR-->
