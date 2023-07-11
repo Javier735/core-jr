@@ -52,7 +52,6 @@ namespace core_jr.Controllers.Identity.Account
                 await _roleManager.CreateAsync(rol);
             }
 
-
             RegisterModel register = new();
             //_mail.SendEmailOutlook();
             return View(register);

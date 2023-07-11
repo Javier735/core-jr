@@ -17,13 +17,7 @@
                                     fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
                                     <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
                                 </svg></div>
-                            <ul class="side-menu">
-                                @*<li class="sub-category">
-                                    <h3>Main</h3>
-                                </li>
-                                <li class="slide">
-                                    <a class="side-menu__item" data-bs-toggle="slide" asp-controller="Home" asp-action="Index"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
-                                </li>*@
+                                <ul class="side-menu">                               
                                 <li class="sub-category">
                                     <h3>Configuración</h3>
                                 </li>
@@ -37,21 +31,19 @@
                                     <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Administración</span><i class="angle fa fa-angle-right"></i></a>
                                     <ul class="slide-menu">
                                         <li class="side-menu-label1"><a href="javascript:void(0)">Administración</a></li>
-                                        <li><a asp-controller="Account" asp-action="Index" class="slide-item"> Usuarios y roles</a></li>
-                                       @* <li><a asp-controller="Calendar" asp-action="Index" class="slide-item"> Default calendar</a></li>
-                                        <li><a asp-controller="Calendar2" asp-action="Index" class="slide-item"> Full calendar</a></li>
-                                        <li><a asp-controller="Chat" asp-action="Index" class="slide-item"> Default Chat</a></li>
-                                        <li><a asp-controller="Notify" asp-action="Index" class="slide-item"> Notifications</a></li>
-                                        <li><a asp-controller="Sweetalert" asp-action="Index" class="slide-item"> Sweet alerts</a></li>
-                                        <li><a asp-controller="Rangeslider" asp-action="Index" class="slide-item"> Range slider</a></li>
-                                        <li><a asp-controller="Scroll" asp-action="Index" class="slide-item"> Content Scroll bar</a></li>
-                                        <li><a asp-controller="Loaders" asp-action="Index" class="slide-item"> Loaders</a></li>
-                                        <li><a asp-controller="Counters" asp-action="Index" class="slide-item"> Counters</a></li>
-                                        <li><a asp-controller="Rating" asp-action="Index" class="slide-item"> Rating</a></li>
-                                        <li><a asp-controller="Timeline" asp-action="Index" class="slide-item"> Timeline</a></li>
-                                        <li><a asp-controller="Treeview" asp-action="Index" class="slide-item"> Treeview</a></li>*@
+                                        <li><a asp-controller="Account" asp-action="Index" class="slide-item"> Usuarios y roles</a></li>                                       
                                     </ul>
                                 </li>
+                                <li class="sub-category">
+                                    <h3>Pacientes</h3>
+                                </li>
+                                @*<li class="slide">
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-user"></i><span class="side-menu__label">Pacientes</span><i class="angle fa fa-angle-right"></i></a>
+                                    <ul class="slide-menu">
+                                        <li class="side-menu-label1"><a href="javascript:void(0)">Registro</a></li>
+                                        <li><a asp-controller="Patients" asp-action="Index" class="slide-item"> Registro</a></li>
+                                    </ul>
+                                </li>*@
                                @* <li class="slide">
                                     <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-package"></i><span class="side-menu__label">Elements</span><i class="angle fa fa-angle-right"></i></a>
                                     <ul class="slide-menu">

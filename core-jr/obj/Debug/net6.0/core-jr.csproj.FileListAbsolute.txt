@@ -22,6 +22,8 @@ C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.As
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.AspNetCore.CookiePolicy.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cors.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.AspNetCore.DataProtection.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
@@ -99,6 +101,7 @@ C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Ex
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.Xml.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Features.dll
@@ -110,6 +113,8 @@ C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Ex
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Hosting.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Http.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Core.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Localization.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
@@ -155,6 +160,7 @@ C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\System.Data.
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\System.Data.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\System.Diagnostics.Contracts.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\System.Diagnostics.Debug.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\System.Diagnostics.DiagnosticSource.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\System.Diagnostics.EventLog.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\System.Diagnostics.FileVersionInfo.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\System.Diagnostics.Process.dll
@@ -289,6 +295,7 @@ C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\System.Xml.X
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\System.Xml.XPath.XDocument.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\refs\WindowsBase.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Humanizer.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\MailKit.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -316,6 +323,17 @@ C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Microsoft.Identit
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\MimeKit.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Sinks.File.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\System.Drawing.Common.dll
@@ -371,6 +389,11 @@ C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\core-jr.MvcApplic
 C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\core-jr.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\core-jr.RazorAssemblyInfo.cache
 C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\core-jr.RazorAssemblyInfo.cs
+C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\staticwebassets\msbuild.core-jr.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\staticwebassets\msbuild.build.core-jr.props
+C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.core-jr.props
+C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.core-jr.props
+C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
@@ -382,15 +405,3 @@ C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\refint\core-jr.dl
 C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\core-jr.pdb
 C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\core-jr.genruntimeconfig.cache
 C:\Users\JavierR\source\repos\core-jr\core-jr\obj\Debug\net6.0\ref\core-jr.dll
-C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\MailKit.dll
-C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\MimeKit.dll
-C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\BouncyCastle.Crypto.dll
-C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.dll
-C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.AspNetCore.dll
-C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
-C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
-C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
-C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
-C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Sinks.Console.dll
-C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
-C:\Users\JavierR\source\repos\core-jr\core-jr\bin\Debug\net6.0\Serilog.Sinks.File.dll

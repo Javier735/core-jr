@@ -13,5 +13,6 @@ namespace core_jr.Data
         //add models
         public DbSet<AppUser> AppUser { get; set; }
         public DbSet<AppRol> AppRol { get; set; }
-    }
+		public DbSet<BusinessData> BusinessData { get; set; }
+	}
 }

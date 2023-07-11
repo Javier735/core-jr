@@ -1,0 +1,42 @@
+2023-07-10 09:37:05.304 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-10 09:37:06.534 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-10 09:37:06.536 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-10 09:37:06.536 -06:00  INF  Hosting environment: Development
+2023-07-10 09:37:06.537 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-10 09:38:22.896 -06:00  WRN  The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-07-10 13:01:21.470 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-10 13:01:21.517 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-10 13:01:21.520 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-10 13:01:21.520 -06:00  INF  Hosting environment: Development
+2023-07-10 13:01:21.520 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-10 13:01:55.139 -06:00  WRN  The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-07-10 13:21:21.327 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-10 13:21:21.373 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-10 13:21:21.376 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-10 13:21:21.376 -06:00  INF  Hosting environment: Development
+2023-07-10 13:21:21.376 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-10 13:21:59.902 -06:00  WRN  The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-07-10 13:29:06.037 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-10 13:29:06.086 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-10 13:29:06.089 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-10 13:29:06.089 -06:00  INF  Hosting environment: Development
+2023-07-10 13:29:06.089 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-10 13:29:30.862 -06:00  WRN  The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-07-10 13:55:39.009 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-10 13:55:39.195 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-10 13:55:39.198 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-10 13:55:39.198 -06:00  INF  Hosting environment: Development
+2023-07-10 13:55:39.198 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-10 13:56:43.808 -06:00  WRN  The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-07-10 15:54:50.594 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-10 15:54:50.649 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-10 15:54:50.653 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-10 15:54:50.653 -06:00  INF  Hosting environment: Development
+2023-07-10 15:54:50.653 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-10 15:55:33.486 -06:00  WRN  The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-07-10 18:15:53.344 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-10 18:15:53.397 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-10 18:15:53.400 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-10 18:15:53.400 -06:00  INF  Hosting environment: Development
+2023-07-10 18:15:53.400 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-10 18:16:55.491 -06:00  WRN  The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.

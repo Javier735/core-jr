@@ -1,0 +1,10 @@
+2023-04-11 11:25:08.050 -06:00  INF  Now listening on: https://localhost:7272
+2023-04-11 11:25:08.170 -06:00  INF  Now listening on: http://localhost:5272
+2023-04-11 11:25:08.173 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-04-11 11:25:08.173 -06:00  INF  Hosting environment: Development
+2023-04-11 11:25:08.173 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-04-11 13:11:27.553 -06:00  INF  Now listening on: https://localhost:7272
+2023-04-11 13:11:27.644 -06:00  INF  Now listening on: http://localhost:5272
+2023-04-11 13:11:27.647 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-04-11 13:11:27.648 -06:00  INF  Hosting environment: Development
+2023-04-11 13:11:27.648 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\

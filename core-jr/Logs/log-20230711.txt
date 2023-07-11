@@ -1,0 +1,64 @@
+2023-07-11 09:15:03.991 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-11 09:15:04.337 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-11 09:15:04.340 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-11 09:15:04.340 -06:00  INF  Hosting environment: Development
+2023-07-11 09:15:04.340 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-11 09:17:43.633 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-11 09:17:43.698 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-11 09:17:43.703 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-11 09:17:43.778 -06:00  INF  Hosting environment: Development
+2023-07-11 09:17:43.778 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-11 09:21:18.497 -06:00  WRN  The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-07-11 09:22:29.039 -06:00  WRN  Invalid password for user.
+2023-07-11 09:22:29.039 -06:00  WRN  User failed to provide the correct password.
+2023-07-11 10:58:11.520 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-11 10:58:11.595 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-11 10:58:11.599 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-11 10:58:11.599 -06:00  INF  Hosting environment: Development
+2023-07-11 10:58:11.600 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-11 11:03:08.706 -06:00  WRN  The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-07-11 11:07:06.524 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-11 11:07:06.570 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-11 11:07:06.574 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-11 11:07:06.574 -06:00  INF  Hosting environment: Development
+2023-07-11 11:07:06.575 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-11 11:29:44.055 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-11 11:29:44.132 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-11 11:29:44.137 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-11 11:29:44.137 -06:00  INF  Hosting environment: Development
+2023-07-11 11:29:44.137 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-11 11:30:10.114 -06:00  WRN  The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-07-11 11:31:00.781 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-11 11:31:00.856 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-11 11:31:00.860 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-11 11:31:00.860 -06:00  INF  Hosting environment: Development
+2023-07-11 11:31:00.860 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-11 11:43:58.274 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-11 11:43:58.330 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-11 11:43:58.333 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-11 11:43:58.333 -06:00  INF  Hosting environment: Development
+2023-07-11 11:43:58.333 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-11 11:46:03.410 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-11 11:46:03.471 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-11 11:46:03.475 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-11 11:46:03.475 -06:00  INF  Hosting environment: Development
+2023-07-11 11:46:03.475 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-11 11:51:48.737 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-11 11:51:48.786 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-11 11:51:48.788 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-11 11:51:48.789 -06:00  INF  Hosting environment: Development
+2023-07-11 11:51:48.789 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-11 11:54:28.973 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-11 11:54:29.028 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-11 11:54:29.031 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-11 11:54:29.031 -06:00  INF  Hosting environment: Development
+2023-07-11 11:54:29.032 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-11 12:01:25.439 -06:00  WRN  The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-07-11 13:41:18.205 -06:00  INF  Now listening on: https://localhost:7272
+2023-07-11 13:41:18.253 -06:00  INF  Now listening on: http://localhost:5272
+2023-07-11 13:41:18.256 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-11 13:41:18.256 -06:00  INF  Hosting environment: Development
+2023-07-11 13:41:18.256 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-07-11 16:26:00.429 -06:00  WRN  The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-07-11 16:26:44.797 -06:00  WRN  Invalid password for user.
+2023-07-11 16:26:44.797 -06:00  WRN  User failed to provide the correct password.

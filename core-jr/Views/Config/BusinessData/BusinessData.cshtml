@@ -1,0 +1,128 @@
+﻿@model BusinessData
+
+<div class="container">
+	<div class="row row-sm">
+		<div class="col-xl-6">
+			<div class="card">
+				<div class="card-body">
+					<form id="formBusinesData" enctype="multipart/form-data">
+						<div class="row">							
+							<div class="row">
+								<input type="hidden" name="BusinessDataId" id="BusinessDataId" value="@Model.BusinessDataId" />
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="form-label">Nombre de la empresa <span class="text-red">*</span></label>
+										<input asp-for="CompanyName" class="form-control" placeholder="Nombre de la empresa" required onchange="RemoveByClass(this,'border-red');" />
+									</div>
+								</div>
+								<div class="">
+									@{
+										string ruta = Model.CompanyLogoPath == null ? "" : "/" + Model.CompanyLogoPath;
+									}
+									<div class="companyLogoBorder">
+										<img class="img-thumbnail img-logo" id="companyLogo" src=@ruta />
+									</div>
+									<br />
+									<div class="">
+										<label class="btn-primary-light custom-file-upload">
+											<input type="file" name="logoFile" id="logoFile" onchange="document.getElementById('companyLogo').src = window.URL.createObjectURL(this.files[0])" />
+											Logo de la empresa <i class="mdi mdi-upload"></i>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="form-label">Dirección</label>
+										<textarea asp-for="CompanyAddress" class="form-control mb-4" placeholder="Dirección" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="form-label">Sitio web</label>
+										<input asp-for="Website" class="form-control" placeholder="Sitio web" />
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="form-label">Email</label>
+										<input asp-for="Email" type="email" class="form-control" placeholder="Email" />
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="form-label">Numero de telefono</label>
+										<input asp-for="CompanyPhone" type="number" class="form-control" placeholder="Numero de telefono" />
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="form-label">Politica de devolución</label>
+										<textarea asp-for="ReturnPolicy" class="form-control mb-4" placeholder="Politica de devolución" rows="3"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<button type="button" class="btn btn-primary-light w-lg" style="width:100%;" id="saveInfo" onclick="submitSaveBusiness()">
+									<span id="spanBusinessData" name="spanBusinessData"> Guardar </span>
+									<div class="spinner-border text-default" id="divBusinessData" name="divBusinessData" style="display:none;" role="status">
+										<span class="sr-only"></span>
+									</div>
+								</button>
+							</div>
+						</div>						
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	
+	function submitSaveBusiness() {
+
+		AnimationButtonSent('divBusinessData', 'spanBusinessData');
+
+		if (!ValidateByAttribute("formBusinesData", "required")) {
+			
+			formData = new FormData();
+			formData.append("BusinessDataId", document.getElementById("BusinessDataId").value);
+			formData.append("CompanyName", document.getElementById("CompanyName").value);
+			formData.append("CompanyLogoFile", document.getElementById("logoFile").files[0]);
+			formData.append("CompanyAddress", document.getElementById("CompanyAddress").value);
+			formData.append("Website", document.getElementById("Website").value);
+			formData.append("Email", document.getElementById("Email").value);
+			formData.append("CompanyPhone", document.getElementById("CompanyPhone").value);
+			formData.append("ReturnPolicy", document.getElementById("ReturnPolicy").value);				
+			
+			$.ajax({
+				url: '@Url.Action("SaveBusinessData", "Config")',
+				type: "POST",
+				async: true,
+				contentType: false,
+				processData: false,
+				data: formData,			
+				success: function (result) {
+					Swal.fire({
+						icon: result.icon,
+						title: result.title,
+						text: result.msg,
+					});
+					callBusinessData();
+				},
+				error: function (error) {
+					console.log(error);
+				},
+				complete: function (datos) {
+				}
+			});
+		}
+		else{
+			AnimationButtonClose('divBusinessData', 'spanBusinessData');
+		}		
+	}
+
+</script>
+
+

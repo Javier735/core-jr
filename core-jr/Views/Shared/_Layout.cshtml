@@ -22,6 +22,7 @@
     <!-- STYLE CSS -->
     <link href="~/assets/css/style.css" rel="stylesheet" asp-append-version="true" />
     <link href="~/assets/css/plugins.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/generalStylesSistem.css" rel="stylesheet" asp-append-version="true" />
 
     @* @RenderSection("Css",false/*required*/) *@
     @await RenderSectionAsync("Css", required: false)
@@ -76,9 +77,7 @@
         <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
 
         <!-- JQUERY JS -->
-        <script src="~/assets/js/jquery.min.js"></script>
-
-         <script src="~/GeneralScripts/generalScripts.js"></script>
+        <script src="~/assets/js/jquery.min.js"></script>      
 
         <!-- BOOTSTRAP JS -->
         <script src="~/assets/plugins/bootstrap/js/popper.min.js"></script>
@@ -111,7 +110,9 @@
         <!-- CUSTOM JS -->
         <script src="~/assets/js/custom.js"></script>  
 
-          <script src="~/assets/sweetalert2/sweetalert2.all.min.js"></script>    
+       <script src="~/assets/sweetalert2/sweetalert2.all.min.js"></script>
+       <script src="~/GeneralScripts/generalScripts.js"></script>
+ 
 
 </body>
 </html>

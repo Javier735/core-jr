@@ -1,0 +1,33 @@
+﻿.border-red{
+    border-color: red;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 250px;
+}
+
+/*.custom-file-upload:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+*/
+.companyLogoBorder {
+    border: dotted;
+    width: 250px;
+    height: 250px;
+    border-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-logo {
+    max-width: 165px;   
+}

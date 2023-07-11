@@ -1,0 +1,9 @@
+2023-04-13 17:44:40.230 -06:00  INF  Now listening on: https://localhost:7272
+2023-04-13 17:44:40.485 -06:00  INF  Now listening on: http://localhost:5272
+2023-04-13 17:44:40.487 -06:00  INF  Application started. Press Ctrl+C to shut down.
+2023-04-13 17:44:40.488 -06:00  INF  Hosting environment: Development
+2023-04-13 17:44:40.488 -06:00  INF  Content root path: C:\Users\JavierR\source\repos\core-jr\core-jr\
+2023-04-13 17:46:01.106 -06:00  WRN  Invalid password for user.
+2023-04-13 17:46:01.109 -06:00  WRN  User failed to provide the correct password.
+2023-04-13 17:46:07.780 -06:00  WRN  Invalid password for user.
+2023-04-13 17:46:07.780 -06:00  WRN  User failed to provide the correct password.

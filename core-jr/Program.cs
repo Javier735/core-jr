@@ -1,4 +1,6 @@
 using core_jr.Data;
+using core_jr.Helpers;
+using core_jr.Providers;
 using core_jr.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -24,10 +26,11 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkSto
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
+builder.Services.AddSingleton<PathProvider>();
+builder.Services.AddSingleton<UploadfilesHelper>();
+
 //Add mailservice
 builder.Services.AddScoped<MailService>();
-
-
 
 builder.Services.Configure<IdentityOptions>(options =>
 {

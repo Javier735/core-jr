@@ -1,8 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿
 <!-- PAGE-HEADER -->
 	<div class="page-header">
 		<div>
@@ -16,13 +12,91 @@
 <!-- PAGE-HEADER END -->
 
 <div class="card">
-	<div class="card-header">
-		<h3 class="card-title">Configuración</h3>
-	</div>
+	<!--configuration menu-->
 	<div class="card-body">
-     
+		<div class="card">									
+		<ul class="nav nav-pills nav-pills-circle" id="tabs_2" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link border py-2 px-4 m-1" id="tab2" data-bs-toggle="tab" href="" onclick="callBusinessData()" role="tab">
+						<span id="mBusinessD" class="nav-link-icon d-block"><i class="fa fa-hospital-o"></i> Información</span>
+						<div class="spinner-grow text-light" id="animationBusinessD" style="display:none;" role="status">
+							<span class="visually-hidden">Loading...</span>
+						</div>
+					</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link border py-2 px-4 m-1" id="tab1" data-bs-toggle="tab" href="" onclick="callThemeStyle()" role="tab">
+					<span id="mThemeSt" class="nav-link-icon d-block"><i class="fa fa-paint-brush"></i> Estilo de la plantilla</span>
+					<div class="spinner-grow text-light" id="animationThemeSt" style="display:none;" role="status">
+						<span class="visually-hidden">Loading...</span>
+					</div>					
+				</a>
+			</li>			
+		</ul>
+		</div>									
+	</div>
+	<!--div container of menu-->
+	<div id="contentMenuConfig">		
 	</div>
 </div>
+
+
+@section Scripts
+{
+	<script>
+		$(document).ready(function () {
+			callBusinessData();
+		});
+	</script>
+}
+
+<script>
+
+	function callThemeStyle(){	
+		
+		AnimationButtonSent('animationThemeSt', 'mThemeSt');
+		$.ajax({
+			type: "get",
+			datatype: 'json',
+			cache: false,
+
+			url: '@Url.Content("~/Config/ThemeStyle")',
+			success: function (result) {
+				$('#contentMenuConfig').html(result);					
+				AnimationButtonClose('animationThemeSt', 'mThemeSt');
+			},
+			error: function (result) {
+				alert('Ocurrio un error ' + result.error.toString);
+				var resultado = result;				
+				AnimationButtonClose('animationThemeSt', 'mThemeSt');
+			}
+		});
+	}
+
+	function callBusinessData() {
+
+		var tabThemeSt = document.getElementById('tab2');
+		AnimationButtonSent('animationBusinessD', 'mBusinessD');
+		$.ajax({
+			type: "get",
+			datatype: 'json',
+			cache: false,
+
+			url: '@Url.Content("~/Config/BusinessData")',
+			success: function (result) {
+				$('#contentMenuConfig').html(result);
+				AnimationButtonClose('animationBusinessD', 'mBusinessD');				
+				tabThemeSt.classList.add('active');
+			},
+			error: function (result) {
+				alert('Ocurrio un error ' + result.error.toString);
+				var resultado = result;				
+				AnimationButtonClose('animationBusinessD', 'mBusinessD');
+			}
+		});
+	}
+
+</script>
 
 
 
